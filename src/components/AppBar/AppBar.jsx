@@ -1,7 +1,9 @@
+import { Navigation } from '../Navigation/Navigation';
+
 export const MenuAppBar = () => {
   return (
     <>
-      <div>MenuAppBar</div>
+      <Navigation />
     </>
   );
 };
