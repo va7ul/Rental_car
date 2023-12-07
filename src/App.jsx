@@ -1,24 +1,21 @@
-import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { lazy } from 'react';
+import { Layout } from './components/Layout/Layout';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage.jsx'));
+const FavoritesPage = lazy(() => import('./pages/FavoritesPage.jsx'));
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>test</div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      <Route path="" element={<Layout />}>
+        <Route index element={<HomePage />}></Route>
+        <Route path="/catalog" element={<CatalogPage />}></Route>
+        <Route path="/favorites" element={<FavoritesPage />}></Route>
+        <Route path="*" element={<HomePage />}></Route>
+      </Route>
+    </Routes>
   );
 }
 
