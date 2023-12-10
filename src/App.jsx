@@ -9,10 +9,10 @@ const FavoritesPage = lazy(() => import('./pages/FavoritesPage.jsx'));
 function App() {
   return (
     <Routes>
-      <Route path="" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />}></Route>
-        <Route path="/catalog" element={<CatalogPage />}></Route>
-        <Route path="/favorites" element={<FavoritesPage />}></Route>
+        <Route path="catalog" element={<CatalogPage />}></Route>
+        <Route path="favorites" element={<FavoritesPage />}></Route>
         <Route path="*" element={<HomePage />}></Route>
       </Route>
     </Routes>
