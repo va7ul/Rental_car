@@ -5,6 +5,6 @@ const page = 1;
 const limit = 12;
 
 export const getAdverts = async () => {
-  const response = await axios.get(`adverts?page=${page}&limit=${limit}`);
+  const response = await axios.get(`/adverts?page=${page}&limit=${limit}`);
   return response.data;
 };
