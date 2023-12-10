@@ -1,5 +1,4 @@
 import { styled } from 'styled-components';
-import Select from 'react-select';
 
 export const colourStylesCar = {
   control: styles => ({
@@ -143,7 +142,6 @@ export const Button = styled.button`
   color: #fff;
   border: transparent;
   margin-top: auto;
-  
 
   &:hover {
     background: #0b44cd;
