@@ -3,6 +3,7 @@ import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
 body {
+  max-width: 1440px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -46,6 +47,5 @@ a
 button {
   border-radius: 5px;
   border: 1px solid;
-  margin-left: 10px;
 }
 `;

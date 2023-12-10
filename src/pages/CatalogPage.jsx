@@ -16,7 +16,6 @@ const CatalogPage = () => {
 
   return (
     <div>
-      <h2>CatalogPage</h2>
       <SearchBar />
       {isLoading && !error && <b>Request in progress...</b>}
       <AdvertsList />

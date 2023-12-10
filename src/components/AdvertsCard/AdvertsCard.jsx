@@ -1,3 +1,6 @@
+import { ReactSVG } from 'react-svg';
+import verticalLine from '../../images/vertical-line.svg';
+
 export const AdvertsCard = ({
   item: {
     id,
@@ -18,13 +21,36 @@ export const AdvertsCard = ({
     mileage,
   },
 }) => {
+  const addressArr = address.split(', ');
+  const country = addressArr[addressArr.length - 1];
+  const city = addressArr[addressArr.length - 2];
+
   return (
     <>
       <img src={img}></img>
-      {make}
-      {model},{year}
-      {rentalPrice}
       <button>Favorite</button>
+      <div>
+        {make}
+        <span>{model}</span>,{year}
+        <span>{rentalPrice}</span>
+      </div>
+      <div>
+        {city}
+        <ReactSVG src={verticalLine} />
+        {country}
+        <ReactSVG src={verticalLine} />
+        {rentalCompany}
+        <ReactSVG src={verticalLine} />
+        Premium
+        <br />
+        {type}
+        <ReactSVG src={verticalLine} />
+        {model}
+        <ReactSVG src={verticalLine} />
+        {id}
+        <ReactSVG src={verticalLine} />
+        {functionalities[0]}
+      </div>
       <button>Learn more</button>
     </>
   );
