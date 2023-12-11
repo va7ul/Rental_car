@@ -47,7 +47,7 @@ export const SearchBar = () => {
           <InputTo placeholder="To" />
         </div>
       </label>
-      <Button>Search</Button>
+      <Button type="button">Search</Button>
     </Form>
   );
 };
