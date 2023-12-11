@@ -15,5 +15,9 @@ test market-driven solutions.
 
 ## Technologies used:
 
-HTML/CSS, JavaScript, React, Redux, Axios, React Router Dom, React Select, React Lazy Routing, Persist, MockAPI
+HTML/CSS, JavaScript, React, Redux, Axios, React Router Dom, React Select, React
+Lazy Routing, Persist, MockAPI
 
+## Model:
+
+https://www.figma.com/file/XhC8FSCfAkraEF5l7Hx4fL/Test?type=design&node-id=0-1&mode=design&t=sRbw7vbWnTKcg9iU-0
