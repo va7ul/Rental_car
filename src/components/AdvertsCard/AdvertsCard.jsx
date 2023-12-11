@@ -13,10 +13,10 @@ import {
   RentalPrice,
   VerticalLine,
   ExtraDesc,
-  Button,
 } from './AdvertsCard.styled';
 import { selectFavorites } from '../../redux/selectors';
 import { toggleFavoriteAdverts } from '../../redux/favoritesSlice';
+import { CardModal } from '../CardModal/CardModal';
 
 export const AdvertsCard = ({
   item: {
@@ -37,6 +37,7 @@ export const AdvertsCard = ({
     rentalConditions,
     mileage,
   },
+  item,
 }) => {
   const addressArr = address.split(', ');
   const country = addressArr[addressArr.length - 1];
@@ -75,9 +76,6 @@ export const AdvertsCard = ({
         <span>{rentalCompany}</span>
         <VerticalLine src={verticalLine} />
         <span>Premium</span>
-
-        {/* <br /> */}
-
         <span>{type}</span>
         <VerticalLine src={verticalLine} />
         <span>{model}</span>
@@ -86,7 +84,7 @@ export const AdvertsCard = ({
         <VerticalLine src={verticalLine} />
         <span>{functionalities[0]}</span>
       </ExtraDesc>
-      <Button>Learn more</Button>
+      <CardModal item={item} />
     </Thumb>
   );
 };

@@ -63,22 +63,3 @@ export const ExtraDesc = styled.div`
   height: 60px;
   margin-bottom: 28px;
 `;
-export const Button = styled.button`
-  width: 274px;
-  height: 44px;
-  padding: 12px 99px;
-  border-radius: 12px;
-  background: #3470ff;
-  color: #fff;
-  border: transparent;
-  margin-top: auto;
-  font-size: 14px;
-
-  &:hover {
-    background: #0b44cd;
-  }
-
-  &:focus {
-    background: #0b44cd;
-  }
-`;
