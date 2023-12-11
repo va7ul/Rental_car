@@ -1,1 +1,0 @@
-import{j as e}from"./index-8dvu8lzN.js";const t=""+new URL("Cars-3bLqzk0E.png",import.meta.url).href,s=()=>e.jsxs("div",{style:{display:"flex",flexDirection:"column",alignItems:"center"},children:[e.jsx("img",{src:t,style:{width:"100%"}}),e.jsx("h1",{style:{fontSize:"60px"},children:"Rent Your Car Now"})]});export{s as default};
