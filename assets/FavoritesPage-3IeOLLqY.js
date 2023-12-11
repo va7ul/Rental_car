@@ -1,4 +1,4 @@
-import{s as c,b as a,j as s,c as o,r as d,f as l}from"./index-EYnY2bny.js";import{s as p,e as n,A as x}from"./AdvertsCard-hUUj1okR.js";const f=c.ul`
+import{s as c,b as a,j as s,c as o,r as d,f as l}from"./index-ClEq-DIc.js";import{s as p,e as n,A as x}from"./AdvertsCard-vfEgq3es.js";const f=c.ul`
   display: flex;
   gap: 50px 29px;
   flex-wrap: wrap;
