@@ -1,1 +1,0 @@
-import{j as e}from"./index-bNuiEDF-.js";const s="/Rental_car/assets/Cars-3bLqzk0E.png",n=()=>e.jsxs("div",{style:{display:"flex",flexDirection:"column",alignItems:"center",paddingTop:"90px",paddingBottom:"90px"},children:[e.jsx("img",{src:s,style:{width:"100%"}}),e.jsx("h1",{style:{fontSize:"60px"},children:"Rent Your Car Now"})]});export{n as default};
